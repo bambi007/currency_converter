@@ -1,0 +1,51 @@
+select {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+	color: $color-primary;
+	font-weight: 600;
+
+	option {
+		border: none;
+		padding: 8px;
+		display: block;
+		margin: 10px;
+		color: $color-primary;
+	}
+}
+
+.custom-select {
+	background: $color-basic;
+	width: 320px;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.2s;
+
+	@media (max-width: 420px) {
+		width: 100%;
+	}
+
+	&:hover {
+		background: $color-secondary;
+
+		select {
+			color: white;
+		}
+	}
+}
+
+input {
+	background: $color-basic;
+	padding: 8px;
+	border-radius: 8px;
+	width: 320px;
+	color: $color-primary;
+
+	@media (max-width: 420px) {
+		width: 100%;
+	}
+}

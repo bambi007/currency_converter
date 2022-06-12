@@ -1,0 +1,59 @@
+@import "./reset";
+@import "./variables";
+@import "./parts/header";
+@import "./parts/inputs";
+@import "./parts/convert";
+
+.app {
+	background-color: #e4e5e7;
+	padding: 20px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	color: $color-primary;
+	height: 100vh;
+}
+
+.heading {
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer {
+	background: $color-primary;
+	color: $color-basic;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: $shadow-sm-soft;
+	display: flex;
+	justify-content: center;
+
+	a {
+		color: inherit;
+		transition: color 0.2s;
+		font-size: 14px;
+
+		&:hover {
+			color: $color-secondary;
+		}
+	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $color-accent;
+	border-radius: 3px;
+}

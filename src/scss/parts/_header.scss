@@ -1,0 +1,46 @@
+.header {
+	border-radius: 10px;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+
+	&:before {
+		content: "";
+		background-image: url("../images/header_image.jpg");
+		background-position: center center;
+		position: absolute;
+		display: block;
+		top: 4px;
+		left: 1%;
+		width: 98%;
+		height: 100%;
+		border-radius: 10px;
+		filter: blur(4px) opacity(0.6);
+		z-index: -1;
+	}
+
+	.header-content {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		border-radius: 10px;
+		background-image: url("../images/header_image.jpg");
+		background-position: center center;
+
+		@media (max-width: 420px) {
+			flex-direction: column;
+		}
+	}
+
+	.app-name {
+		color: white;
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	.time-date {
+		color: white;
+	}
+}
